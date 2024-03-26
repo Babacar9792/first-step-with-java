@@ -1,6 +1,6 @@
 package Exo1;
 
-import javax.swing.JOptionPane;;
+import javax.swing.JOptionPane;
 
 /**
  * Exercice 1
