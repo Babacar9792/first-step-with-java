@@ -10,7 +10,6 @@ import javax.swing.JOptionPane;
 public class Exercice2 {
 
     public static void main(String[] args) {
-
         InnerExercice2 sentInnerExercice2 = new InnerExercice2();
         sentInnerExercice2.exercice();
 
@@ -23,6 +22,7 @@ public class Exercice2 {
  */
 class InnerExercice2 {
 
+    /** Méthode pour savoir si le caractere space est un espace et si s'en est , est ce qu'il est inutile ou pas */
     public boolean isUnnecessarySpace(char space, int position, String sentence) {
         if (space == ' ') {
             if (position == 0 || position == sentence.length() - 1) {
@@ -35,6 +35,8 @@ class InnerExercice2 {
         return false;
     }
 
+
+    /** Méthode pour supprimer tous les epaces inutiles. Il utilise la méthode isUnnecessarySpace poir savoir si le caractere est un espace inutile ou pas */
     public String deleteUnnecessarySpace(String sentence) {
         String newSentence = "";
         for (int i = 0; i < sentence.length(); i++) {
